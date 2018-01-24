@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eliteinfoworld.shoppingapp.activity.ActHome">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomLay"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/size_20">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etCreditCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Card number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:inputType="phone"
+                android:digits=" 1234567890"
+                android:maxLength="19"
+
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_hideUnderline="false"
+                app:met_primaryColor="@color/red"
+                app:met_textColorHint="@color/greyDark"
+                app:met_underlineColor="@color/grey" />
+
+
+            <!--<com.devmarvel.creditcardentry.library.CreditCardForm
+                android:visibility="gone"
+                android:id="@+id/credit_card_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:helper_text_color="@color/black"
+                app:card_number_hint="XXXX XXXX XXXX XXXX"
+                app:include_exp="false"
+                app:include_helper="false"
+                app:include_security="false"
+                app:include_zip="false"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/size_20">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etCardMMYY"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_10"
+
+                    android:hint="MM/YY"
+                    android:maxLength="5"
+                    android:digits=" 1234567890/"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:textSize="@dimen/size_18"
+
+
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/greyDark"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/red"
+                    app:met_textColorHint="@color/greyDark"
+                    app:met_underlineColor="@color/grey" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etAddress"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10"
+
+                    android:hint="CVC"
+                    android:text=""
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:digits=" 1234567890"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18"
+
+
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="@color/greyDark"
+                    app:met_hideUnderline="false"
+                    app:met_primaryColor="@color/red"
+                    app:met_textColorHint="@color/greyDark"
+                    app:met_underlineColor="@color/grey" />
+
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+
+                android:hint="Owner name"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_hideUnderline="false"
+                app:met_primaryColor="@color/red"
+                app:met_textColorHint="@color/greyDark"
+                app:met_underlineColor="@color/grey" />
+            <!--app:met_singleLineEllipsis="true"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Country"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/size_10" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+                android:hint="Phone number"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:inputType="number"
+                android:digits=" 1234567890"
+                android:maxLength="13"
+
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_hideUnderline="false"
+                app:met_primaryColor="@color/red"
+                app:met_textColorHint="@color/greyDark"
+                app:met_underlineColor="@color/grey" />
+
+            <WebView
+                android:id="@+id/wvTermsCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_15"
+                android:padding="@dimen/size_15"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="@dimen/size_14" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/llBottomLay"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:id="@+id/llBottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|right"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_15"
+            android:text="SAVE"
+            android:textColor="@color/orangeDark"
+            android:textSize="@dimen/size_16" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

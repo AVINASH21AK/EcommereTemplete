@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eliteinfoworld.shoppingapp.activity.ActHome"
+    android:background="@color/greyLight">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+
+            <ImageView
+                android:id="@+id/ivTrophy"
+                android:layout_width="@dimen/size_50"
+                android:layout_height="@dimen/size_50"
+                android:layout_above="@+id/tv"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/redDark"
+                android:src="@drawable/ic_emojis_24dp" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_centerHorizontal="true"
+                android:text="You have no items in \n your wishlist, yet"
+                android:textSize="@dimen/size_16"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size_50"
+                android:paddingTop="@dimen/size_10"
+                android:paddingBottom="@dimen/size_10"
+                android:paddingRight="@dimen/size_20"
+                android:paddingLeft="@dimen/size_20"
+                android:background="@drawable/xml_rect_corner_blue"
+                android:text="START SHOPPING"
+                android:textColor="@color/white" />
+
+     </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

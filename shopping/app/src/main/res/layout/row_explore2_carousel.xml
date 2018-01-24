@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardlist_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/cardview_radius"
+        card_view:cardElevation="@dimen/size_5"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/size_150"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_120"
+                android:scaleType="fitCenter"
+                android:background="@color/greyLight"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_20"
+                        android:text="Laser Projector FG245"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textSize="@dimen/size_16" />
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10">
+
+                    <RatingBar
+                        android:id="@+id/tvRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_20"
+                        android:theme="@style/RatingBar"
+                        android:rating="2"
+                        style="?android:attr/ratingBarStyleSmall" />
+
+
+                    <TextView
+                        android:id="@+id/tvTotalRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tvRatingBar"
+                        android:layout_marginLeft="@dimen/size_2"
+                        android:gravity="center"
+                        android:text="123"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/size_14" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/xml_rect_ringonly"
+        android:layout_marginTop="@dimen/size_5"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10">
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:gravity="center"
+            android:text="$129"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:gravity="center"
+            android:text="- BUY NOW"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_12" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

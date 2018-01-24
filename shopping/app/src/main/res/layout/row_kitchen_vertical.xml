@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="@dimen/cardview_radius"
+                card_view:cardElevation="@dimen/size_1"
+                card_view:cardUseCompatPadding="true"
+                android:layout_alignParentLeft="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivImgV1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_150"
+                        android:scaleType="fitCenter"
+                        android:src="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10">
+
+                        <TextView
+                            android:id="@+id/tvProNmV1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/ivDotsV1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:text="Laser Projector FG245"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14" />
+
+                        <ImageView
+                            android:id="@+id/ivDotsV1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_dots_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvComNmV1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvProNmV1"
+                            android:layout_marginBottom="@dimen/size_5"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:text="Epson"
+                            android:textColor="@color/greyDark"
+                            android:textSize="@dimen/size_12" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvComNmV1"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/size_10"
+                            android:layout_marginTop="@dimen/size_10">
+
+
+                            <RatingBar
+                                android:id="@+id/tvRatingV1"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="@dimen/size_80"
+                                android:layout_height="@dimen/size_20"
+                                android:rating="2"
+                                android:theme="@style/RatingBar" />
+
+
+
+                            <TextView
+                                android:id="@+id/tvPriceV1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="@dimen/size_5"
+                                android:text="$150"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/size_14" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardViewV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="@dimen/cardview_radius"
+                card_view:cardElevation="@dimen/size_1"
+                card_view:cardUseCompatPadding="true"
+                android:layout_alignParentRight="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivImgV2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_150"
+                        android:scaleType="fitCenter"
+                        android:src="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10">
+
+                        <TextView
+                            android:id="@+id/tvProNmV2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/ivDots2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:minLines="1"
+                            android:text="Laser Projector FG245"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14" />
+
+                        <ImageView
+                            android:id="@+id/ivDots2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_dots_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvComNmV2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvProNmV2"
+                            android:layout_marginBottom="@dimen/size_5"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:text="Epson"
+                            android:textColor="@color/greyDark"
+                            android:textSize="@dimen/size_12" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvComNmV2"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="@dimen/size_10"
+                            android:layout_marginTop="@dimen/size_10">
+
+
+                            <RatingBar
+                                android:id="@+id/tvRatingV2"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="@dimen/size_80"
+                                android:layout_height="@dimen/size_20"
+                                android:rating="2"
+                                android:theme="@style/RatingBar" />
+
+
+
+                            <TextView
+                                android:id="@+id/tvPriceV2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="@dimen/size_5"
+                                android:text="$150"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/size_14" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="@dimen/cardview_radius"
+            card_view:cardElevation="@dimen/size_1"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/ivImgH"
+                    android:padding="@dimen/size_10">
+
+                    <TextView
+                        android:id="@+id/tvSalesH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_info_24dp"
+                        android:drawablePadding="@dimen/size_5"
+                        android:gravity="center"
+                        android:text="On sales now"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/size_12"
+                        android:textAlignment="center"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/tvProNmH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="Laser Projector FG245"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_16" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvProNmH"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/size_2">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyDark"
+                                    android:layout_alignEnd="@+id/tvProOldPriceH"
+                                    android:layout_centerInParent="true"/>
+                                <TextView
+                                    android:id="@+id/tvProOldPriceH"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$499"
+                                    android:textColor="@color/greyDark"
+                                    android:textSize="@dimen/size_14" />
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/tvPriceH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/size_5"
+                                android:text="$499"
+                                android:textColor="@color/orangeDark"
+                                android:textSize="@dimen/size_14" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivImgH"
+                    android:layout_width="@dimen/size_150"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:src="@color/black" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

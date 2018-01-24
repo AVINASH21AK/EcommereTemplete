@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_expand"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvExpandTxt"
+        android:paddingLeft="@dimen/size_30"
+        android:paddingRight="@dimen/size_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="linear_expand"
+        android:textColor="@color/greyDark" />
+
+
+</LinearLayout>

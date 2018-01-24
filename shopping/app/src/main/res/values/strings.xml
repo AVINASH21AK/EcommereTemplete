@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">shoppingapp</string>
+    <string name="newsLetter">Special offers from our store.\nYou should <u>enter your E-mail address</u>.</string>
+</resources>

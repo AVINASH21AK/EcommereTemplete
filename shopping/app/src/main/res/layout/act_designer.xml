@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eliteinfoworld.shoppingapp.activity.ActHome">
+
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/colorPrimary"
+        app:pstsShouldExpand="true"
+        style="@style/PagerSlidingTabStrip"/>
+
+    <!--app:pstsDividerColor="@color/yellow"
+        app:pstsIndicatorColor="@color/blue"
+        app:pstsShouldExpand="true"
+        app:pstsTabTextColor="@color/clrBtnFooter"
+        app:pstsTabTextSize="15dp"
+        app:pstsUnderlineColor="@color/red"
+        app:pstsUnderlineHeight="1dp" -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/htab_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tabs" />
+
+
+</RelativeLayout>

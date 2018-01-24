@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eliteinfoworld.shoppingapp.activity.ActSplash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_bottom"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/greyDark" />
+
+            <TextView
+                android:id="@+id/tvSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_20"
+                android:paddingTop="@dimen/size_15"
+                android:paddingBottom="@dimen/size_15"
+                android:paddingLeft="@dimen/size_10"
+                android:paddingRight="@dimen/size_10"
+                android:text="SKIP"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/white"
+                android:gravity="left"/>
+
+            <io.github.kshitij_jain.indicatorview.IndicatorView
+                android:id="@+id/circle_indicator_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+
+                app:activeColor="@color/white"
+                app:inactiveColor="@color/black"/>
+
+
+            <ImageView
+                android:id="@+id/ivNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_20"
+                android:src="@drawable/ic_arrow_right_24dp"
+                android:tint="@color/white"
+                android:paddingTop="@dimen/size_15"
+                android:paddingBottom="@dimen/size_15"
+                android:paddingLeft="@dimen/size_10"
+                android:paddingRight="@dimen/size_10"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_10"
+                android:text="START SHOPPING"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingTop="@dimen/size_15"
+                android:paddingBottom="@dimen/size_15"
+                android:paddingLeft="@dimen/size_10"
+                android:paddingRight="@dimen/size_10"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

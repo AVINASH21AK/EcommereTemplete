@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eliteinfoworld.shoppingapp.activity.ActHome">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/llBottomLay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/size_20">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Country"
+                android:textSize="@dimen/size_10"/>
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+                android:hint="Name"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:maxLength="20"
+
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/grey"
+                app:met_hideUnderline="false"
+                app:met_textColorHint="@color/greyDark"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_primaryColor="@color/red"/>
+            <!--app:met_singleLineEllipsis="true"-->
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+                android:hint="Phone Number"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:inputType="number"
+                android:digits=" 1234567890"
+                android:maxLength="13"
+
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/grey"
+                app:met_hideUnderline="false"
+                app:met_textColorHint="@color/greyDark"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_primaryColor="@color/red"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+                android:hint="City"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:maxLength="20"
+
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/grey"
+                app:met_hideUnderline="false"
+                app:met_textColorHint="@color/greyDark"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_primaryColor="@color/red"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+                android:hint="Adress"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:maxLength="40"
+                android:maxLines="1"
+
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/grey"
+                app:met_hideUnderline="false"
+                app:met_textColorHint="@color/greyDark"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_primaryColor="@color/red"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/etPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+
+                android:hint="Postal Code"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18"
+                android:inputType="number"
+                android:digits=" 1234567890"
+                android:maxLength="6"
+
+                app:met_floatingLabel="highlight"
+                app:met_underlineColor="@color/grey"
+                app:met_hideUnderline="false"
+                app:met_textColorHint="@color/greyDark"
+                app:met_floatingLabelTextColor="@color/greyDark"
+                app:met_primaryColor="@color/red"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_above="@+id/llBottomLay"/>
+
+    <LinearLayout
+        android:id="@+id/llBottomLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="bottom|right">
+
+        <TextView
+            android:id="@+id/tvReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_15"
+            android:text="RESET"
+            android:textColor="@color/orangeDark"
+            android:textSize="@dimen/size_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_15"
+            android:text="SAVE"
+            android:textColor="@color/orangeDark"
+            android:textSize="@dimen/size_16"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

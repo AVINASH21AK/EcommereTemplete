@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyLight">
+    <!--Notes - bg clr is as screen bg when slide up should match n remove violet view-->
+
+     <View
+         android:id="@+id/view1"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/toolbar_size"
+         android:background="@color/colorPrimary"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardlist_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_200"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="@dimen/cardview_radius"
+                card_view:cardElevation="@dimen/size_2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/image3"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tvCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tvCardSubTitle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:text="New season"
+                        android:textSize="@dimen/size_16"
+                        android:textColor="@color/white"
+                        android:alpha="0.9"/>
+
+                    <TextView
+                        android:id="@+id/tvCardSubTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/size_10"
+                        android:text="Acne Stuio Mens S/S17"
+                        android:textSize="@dimen/size_20"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greyLight"
+                android:paddingTop="@dimen/size_20">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:text="New sheoes &amp; sneaker"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvTotalShoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:text="Over 200 new items"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/greyDark"/>
+
+                <TextView
+                    android:id="@+id/tvShoesMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_alignParentRight="true"
+                    android:text="MORE"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/greyDark"
+                    android:textStyle="bold"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewShoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_below="@+id/tvTotalShoes"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>

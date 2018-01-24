@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_10">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/cardview_radius"
+        card_view:cardElevation="@dimen/size_5"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/ll_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_100"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/ivImg"
+                android:padding="@dimen/size_10">
+
+                <TextView
+                    android:id="@+id/tvSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_info_24dp"
+                    android:drawablePadding="@dimen/size_5"
+                    android:gravity="center"
+                    android:text="On sales now"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/size_12"
+                    android:textAlignment="center"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="Laser Projector FG245"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_16" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvProductName"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size_2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:background="@color/greyDark"
+                                android:layout_alignEnd="@+id/tvProOldPrice"
+                                android:layout_centerInParent="true"/>
+                            <TextView
+                                android:id="@+id/tvProOldPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="$499"
+                                android:textColor="@color/greyDark"
+                                android:textSize="@dimen/size_14" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tvProNewPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5"
+                            android:text="$499"
+                            android:textColor="@color/orangeDark"
+                            android:textSize="@dimen/size_14" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image1" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
